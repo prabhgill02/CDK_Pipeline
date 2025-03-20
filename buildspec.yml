@@ -6,8 +6,9 @@ phases:
       - npm install
   build:
     commands:
+      - cdk bootstrap
       - cdk synth
       - cdk deploy --require-approval never
 artifacts:
   files:
-    - '**/*'
+    - "**/*"
