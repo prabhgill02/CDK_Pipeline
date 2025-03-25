@@ -1,0 +1,105 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "MyCdkProjectStack": {
+        "id": "MyCdkProjectStack",
+        "path": "MyCdkProjectStack",
+        "children": {
+          "MyFirstBucket": {
+            "id": "MyFirstBucket",
+            "path": "MyCdkProjectStack/MyFirstBucket",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "MyCdkProjectStack/MyFirstBucket/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "versioningConfiguration": {
+                      "status": "Enabled"
+                    }
+                  }
+                },
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.aws_s3.CfnBucket",
+                  "version": "2.181.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.aws_s3.Bucket",
+              "version": "2.181.1",
+              "metadata": [
+                {
+                  "versioned": true,
+                  "removalPolicy": "destroy"
+                }
+              ]
+            }
+          },
+          "CDKMetadata": {
+            "id": "CDKMetadata",
+            "path": "MyCdkProjectStack/CDKMetadata",
+            "children": {
+              "Default": {
+                "id": "Default",
+                "path": "MyCdkProjectStack/CDKMetadata/Default",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnResource",
+                  "version": "2.181.1"
+                }
+              },
+              "Condition": {
+                "id": "Condition",
+                "path": "MyCdkProjectStack/CDKMetadata/Condition",
+                "constructInfo": {
+                  "fqn": "aws-cdk-lib.CfnCondition",
+                  "version": "2.181.1"
+                }
+              }
+            },
+            "constructInfo": {
+              "fqn": "constructs.Construct",
+              "version": "10.4.2"
+            }
+          },
+          "BootstrapVersion": {
+            "id": "BootstrapVersion",
+            "path": "MyCdkProjectStack/BootstrapVersion",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnParameter",
+              "version": "2.181.1"
+            }
+          },
+          "CheckBootstrapVersion": {
+            "id": "CheckBootstrapVersion",
+            "path": "MyCdkProjectStack/CheckBootstrapVersion",
+            "constructInfo": {
+              "fqn": "aws-cdk-lib.CfnRule",
+              "version": "2.181.1"
+            }
+          }
+        },
+        "constructInfo": {
+          "fqn": "aws-cdk-lib.Stack",
+          "version": "2.181.1"
+        }
+      },
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree",
+        "constructInfo": {
+          "fqn": "constructs.Construct",
+          "version": "10.4.2"
+        }
+      }
+    },
+    "constructInfo": {
+      "fqn": "aws-cdk-lib.App",
+      "version": "2.181.1"
+    }
+  }
+}
