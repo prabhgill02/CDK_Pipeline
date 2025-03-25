@@ -18,7 +18,7 @@
         "validateOnSynth": false,
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/01bc4db64184e1e4d7e29c3c79fd4a492093ebc5fdc90dbc7ca835c444c9da58.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/1171a19cad3065cce80386ed16e72c66530195e8d078704031c5293ae28ce2c7.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
@@ -34,7 +34,7 @@
         "MyCdkProjectStack.assets"
       ],
       "metadata": {
-        "/MyCdkProjectStack/MyFirstBucket": [
+        "/MyCdkProjectStack/ps-8946518-bucket": [
           {
             "type": "aws:cdk:analytics:construct",
             "data": {
@@ -43,10 +43,171 @@
             }
           }
         ],
-        "/MyCdkProjectStack/MyFirstBucket/Resource": [
+        "/MyCdkProjectStack/ps-8946518-bucket/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "MyFirstBucketB8884501"
+            "data": "ps8946518bucket7BBC4A5F"
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-lambda": [
+          {
+            "type": "aws:cdk:analytics:construct",
+            "data": {
+              "runtime": "*",
+              "handler": "*",
+              "code": "*",
+              "environment": "*"
+            }
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "addEnvironment": [
+                "*",
+                "*"
+              ]
+            }
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-lambda/ServiceRole": [
+          {
+            "type": "aws:cdk:analytics:construct",
+            "data": {
+              "assumedBy": {
+                "principalAccount": "*",
+                "assumeRoleAction": "*"
+              },
+              "managedPolicies": [
+                {
+                  "managedPolicyArn": "*"
+                }
+              ]
+            }
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "addToPrincipalPolicy": [
+                {}
+              ]
+            }
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "attachInlinePolicy": [
+                "*"
+              ]
+            }
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "attachInlinePolicy": [
+                "*"
+              ]
+            }
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "addToPrincipalPolicy": [
+                {}
+              ]
+            }
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-lambda/ServiceRole/ImportServiceRole": [
+          {
+            "type": "aws:cdk:analytics:construct",
+            "data": "*"
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-lambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ps8946518lambdaServiceRole926B51C1"
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-lambda/ServiceRole/DefaultPolicy": [
+          {
+            "type": "aws:cdk:analytics:construct",
+            "data": "*"
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "attachToRole": [
+                "*"
+              ]
+            }
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "attachToRole": [
+                "*"
+              ]
+            }
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "addStatements": [
+                {}
+              ]
+            }
+          },
+          {
+            "type": "aws:cdk:analytics:method",
+            "data": {
+              "addStatements": [
+                {}
+              ]
+            }
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-lambda/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ps8946518lambdaServiceRoleDefaultPolicyD5C5AE1D"
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-lambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ps8946518lambda8A3185A4"
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-table": [
+          {
+            "type": "aws:cdk:analytics:construct",
+            "data": {
+              "partitionKey": {
+                "name": "*",
+                "type": "S"
+              },
+              "tableName": "*",
+              "removalPolicy": "destroy"
+            }
+          },
+          {
+            "type": "aws:cdk:hasPhysicalName",
+            "data": {
+              "Ref": "ps8946518table4217259F"
+            }
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-table/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ps8946518table4217259F"
+          }
+        ],
+        "/MyCdkProjectStack/ps-8946518-table/ScalingRole": [
+          {
+            "type": "aws:cdk:analytics:construct",
+            "data": "*"
           }
         ],
         "/MyCdkProjectStack/CDKMetadata/Default": [
